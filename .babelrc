@@ -1,0 +1,6 @@
+{
+  "presets": [
+    // https://cloud.google.com/functions/docs/concepts/nodejs-10-runtime
+    ["@babel/preset-env", { "targets": { "node": "10.15.3" } }]
+  ]
+}

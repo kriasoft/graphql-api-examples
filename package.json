@@ -1,0 +1,21 @@
+{
+  "name": "api",
+  "version": "1.0.0",
+  "private": true,
+  "dependencies": {
+    "express": "^4.17.1",
+    "express-graphql": "^0.9.0",
+    "graphql": "^14.5.6"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.6.0",
+    "@babel/core": "^7.6.0",
+    "@babel/preset-env": "^7.6.0",
+    "nodemon": "^1.19.2"
+  },
+  "scripts": {
+    "build": "babel src --out-dir build --source-maps=inline --delete-dir-on-start --copy-files --verbose",
+    "start": "yarn build --watch & sleep 1 && nodemon --watch build build/index.js",
+    "debug": "yarn build --watch & sleep 1 && nodemon --inspect --watch build build/index.js"
+  }
+}

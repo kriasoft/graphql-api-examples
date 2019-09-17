@@ -1,0 +1,16 @@
+# Include your project-specific ignores in this file
+# See https://help.github.com/ignore-files/ for more about ignoring files
+
+# Build output
+build/
+
+# Node.js and Yarn
+node_modules/
+yarn-debug.log*
+yarn-error.log*
+
+# VS Code
+.vscode/*
+!.vscode/snippets
+!.vscode/launch.json
+!.vscode/settings.json
